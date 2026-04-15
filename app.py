@@ -1,5 +1,5 @@
 import streamlit as st
-from api_calling_app import note_generator,generate_audio,generator_quiz
+from utils.api_calling_app import note_generator,generate_audio,generator_quiz
 from PIL import Image
 
 
