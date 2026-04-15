@@ -1,4 +1,4 @@
-from streamlit import  as st
+import streamlit as st
 
 from google import genai
 from dotenv import load_dotenv
@@ -32,7 +32,6 @@ def note_generator(images):
 def generate_audio(text):
     speech = gTTS(text,lang="bn",slow=False)
     audio_buffer = io.BytesIO()
-    audio_buffer.seek(0)
     speech.write_to_fp(audio_buffer)
     return audio_buffer
 
